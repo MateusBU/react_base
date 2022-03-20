@@ -12,6 +12,7 @@ export default function Login() {
       </Title>
       <Paragrafo>Lorem ipsum dolor sit</Paragrafo>
       <a href="https://twitter.com/home">OI</a>
+      <button type="button">Enviar</button>
     </Container>
   );
 }
