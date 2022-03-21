@@ -1,20 +1,23 @@
 import React from 'react';
 import { FaHome, FaSignInAlt, FaUserAlt } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 import { Nav } from './styled';
 
 export default function Header() {
   return (
     <Nav>
-      <a href="https://twitter.com/home">
+      <Link to="/">
         <FaHome size={24} />
-      </a>
-      <a href="https://twitter.com/home">
+      </Link>
+      <Link to="/Login">
         <FaSignInAlt size={24} />
-      </a>
-      <a href="https://twitter.com/home">
+      </Link>
+      <Link to="/asd">
         <FaUserAlt size={24} />
-      </a>
+      </Link>
     </Nav>
   );
 }
+/* para usar o Link, o HEADER deve estar envolvido pelo Router history={history} no App.js
+ O 'to' é a mesma coisa que href */
