@@ -1,0 +1,5 @@
+-> teremos um estado incial que é um objeto
+  -> Estado_logado: {false}
+
+-> Disparama açao que será ouvida pelo reducer, e cria um novo estado retornando o mesmo
+  -> açao	-> reducer -> newState = state -> newState
