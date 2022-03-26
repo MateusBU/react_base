@@ -12,7 +12,7 @@ export default function Login() {
   function handleClick(e) {
     e.preventDefault();
     dispatch(
-      exampleActions.clicaBotao() // TIPO DA AÇÃO QUE EU DISPARO
+      exampleActions.clicaBotaoRequest() // TIPO DA AÇÃO QUE EU DISPARO
     );
   }
   return (

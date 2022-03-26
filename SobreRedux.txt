@@ -3,3 +3,7 @@
 
 -> Disparama açao que será ouvida pelo reducer, e cria um novo estado retornando o mesmo
   -> açao	-> reducer -> newState = state -> newState
+
+
+  Assíncrono
+  açao (request) depois o saga verifica e chama o reducer se der certo, dps o reducer retorna sucess ou fail
