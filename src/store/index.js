@@ -1,24 +1,7 @@
 import { createStore } from 'redux';
 
-const initialState = {
-  botaoClicado: false,
-};
+import rootReducer from './modules/rootReducer';
 
-// eslint-disable-next-line default-param-last
-const reducer = (state = initialState, action) => {
-  switch (action.type) {
-    case 'BOTAO_CLICADO': {
-      const newState = { ...state }; // copiou o estado para a newState, NÃO PODE MANIPULAR O STATE DIRETO
-      newState.botaoClicado = !newState.botaoClicado; // toggle valor initiolState
-      return newState;
-    }
-
-    default: {
-      return state;
-    }
-  }
-};
-
-const store = createStore(reducer); // todas os reducer escutam todas as ações disparadas
-
+const store = createStore(rootReducer); // todas os reducer escutam todas as ações disparadas
+// o rootReducer é um dicionario que contém mais de um reducer
 export default store;
